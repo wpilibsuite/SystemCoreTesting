@@ -10,3 +10,5 @@ Note that all updated documentation for 2027 changes, new features, etc. can be 
 ### Vendor Libraries
 
 ### Other
+
+* [AdvantageScope 2027 Alpha](AdvantageScope.md)
