@@ -12,6 +12,7 @@ Due to the volatile nature of versions and breaking changes, the below list is p
   - Phoenix 6 `25.90.0-alpha-1`
 
 ### Phoenix 6 API to Firmware
+
 - `25.90.0-alpha-1` compatible Phoenix 6 firmware
   - Firmware `25.90.0.0`
 
