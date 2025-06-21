@@ -40,3 +40,7 @@ public static final TalonFX m_motor = new TalonFX(0, "can_s0");
 
 - Alpha-1: Phoenix 5 is unavailable.
 - Alpha-1: Python wheels are unavailable.
+
+## Download
+- Vendordep is available at https://raw.githubusercontent.com/wpilibsuite/SystemCoreTesting/refs/heads/main/vendordeps/Phoenix6-frc2027-alpha-1.json
+- Firmware is available at ...
