@@ -1,7 +1,7 @@
 # SystemCoreTesting
 Repository for Alpha and Beta testing of SystemCore and MotionCore devices
 
-
+Note that all updated documentation for 2027 WPILib changes, new features, etc. can be found on the '2027' version of the WPILib Docs site: https://docs.wpilib.org/en/2027/.
 
 >**Software posted here is Alpha software for the 2027 season and is not compatible with Control Hub or roboRIO**
 
@@ -9,11 +9,15 @@ Repository for Alpha and Beta testing of SystemCore and MotionCore devices
 
 ![SystemcoreTopHousing](https://ik.imagekit.io/llimi/controlsystem/tophousingcrop
 )
+
 [Systemcore Specification PDF]()
->**Alpha units will not look like this. Expect a 3D printed housing without labels**
+
+>**Alpha units do not have port labels**
+![SystemcoreUnboxing](https://ik.imagekit.io/llimi/controlsystem/scunboxing.png
+)
 
 
-Note that all updated documentation for 2027 WPILib changes, new features, etc. can be found on the '2027' version of the WPILib Docs site: https://docs.wpilib.org/en/2027/.
+
 
 ## Beta Software Directory
 
@@ -29,10 +33,10 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ## Alpha 1 Goals
 
-* Maximize 'drive time' with Systemcore, ideally with a Swerve Drive FRC Robot.
-* Gather feedback on Hardware Reliablity, Connectors, and ease-of-use.
-* Eliminate as many points of confusion and frustration as possible. Take note of every inconveneince you experience as you start using Systemcore.
-* If you have the opportunity and the confidence to do so, test your Systemcore at an offseason event.
+* Maximize 'drive time' with Systemcore, ideally with Swerve Drive FRC Robots.
+* Gather feedback on hardware reliability, connectors, and ease-of-use.
+* Eliminate as many points of confusion and frustration as possible.
+* Witness Systemcore in action at offseason events
 
 ## Systemcore Quick Start
 
@@ -45,13 +49,13 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 | SystemCore USB IP (Linux, Mac) | 172.29.0.1 |
 | Default Username | systemcore |
 | Default Password | systemcore |
-| Default Mount Location for USB Storage | /U |
+| Default Mount Locations for USB Storage | /U, /V ...|
 | CAN Bus Interface Names| can_s0, can_s1, can_s2, can_s3, can_s4 |
 
 ### Power
 
-1. Connect a 5-24V source to the Weidmuller power port to power-on Systemcore.
-2. If the USBC-port is attached before power is applied, Systemcore will enter flash mode.
+1. Connect your SystemCore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
+2. If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
 
 
 ### Flashing OS Updates
@@ -59,16 +63,20 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 <details>
 <summary>Flashing OS Updates (Windows)</summary>
 
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1095423117?h=eae82ba905&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="systemcore_flash_windows"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
 1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public)
 2. Make sure the new [Limelight Hardware Manager 2.0](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_0.exe) is installed
 3. Open Limelight Hardware Manager
 3. Navigate to the Flash OS Tab
-4. Boot SystemCore into Flash Mode (see 'power' section above)
-5. Wait for SystemCore to enumerate as several storage devices
-6. Select an OS .zip or .img to flash.
-7. Refresh drives and select the one marked as Limelight/SystemCore
-8. Click the “Flash” Button after it starts flashing.
-9. Once complete, remove USB and power from SystemCore
+4. Boot SystemCore into Flash Mode (see 'power' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
+5. Select an OS .zip or .img to flash. Wait for extraction to complete.
+6. Refresh drives and select the one marked as Limelight/SystemCore. 
+7. Click the “Flash” Button after it starts flashing.
+8. Once complete, remove USB and power from SystemCore
+
 
 >**Full System Images will take several minutes to flash. Systemcore will soon support fast OTA updates.**
 
@@ -115,6 +123,9 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 ### Accessing The Web Interface and Setting Your Team Number
 
+<details>
+<summary>Click To Expand</summary>
+
 1. Boot Systemcore normally.
 2. Connect via USB, Ethernet, or Wi-Fi
 3. Navigate to http://robot.local in a web browser. Relevant IP Addresses are displayed directly on the OLED display. The Hardware Manager's 'Find' Tab will also help you find your SystemCore's IP Address if robot.local does not work.
@@ -128,6 +139,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 ![](https://ik.imagekit.io/llimi/controlsystem/tr:e-shadow/dsconnectivity.png
 )
+</details>
 
 ### Deploy your first Robot Program to SystemCore
 
@@ -164,8 +176,3 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 ### Explore the Web Interface
 
-1. Take a look at every tab within the "System" tab.
-
-### Build Your Own Package
-
-1. Take a look at every tab within the "System" tab.
