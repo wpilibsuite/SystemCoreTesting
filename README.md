@@ -63,8 +63,8 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 <details>
 <summary>Flashing OS Updates (Windows)</summary>
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1095423117?h=eae82ba905&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="systemcore_flash_windows"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+[SystemCore Flash Tutorial Video (Windows)](https://player.vimeo.com/video/1095423117)
 
 
 1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public)
