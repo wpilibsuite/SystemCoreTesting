@@ -9,6 +9,6 @@ Note that all updated documentation for 2027 changes, new features, etc. can be 
 
 ### Vendor Libraries
 
-- [CTR Electronics Phoenix 6](https://raw.githubusercontent.com/wpilibsuite/SystemCoreTesting/refs/heads/main/CTR-Phoenix.md)
+- [CTR Electronics Phoenix 6](CTR-Phoenix.md)
 
 ### Other
