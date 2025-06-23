@@ -125,17 +125,15 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 1. Boot Systemcore normally.
 2. Connect via USB, Ethernet, or Wi-Fi
-3. Navigate to http://robot.local in a web browser. Relevant IP Addresses are displayed directly on the OLED display. The Hardware Manager's 'Find' Tab will also help you find your Systemcore's IP Address if robot.local does not work.
+3. Navigate to http://robot.local in a web browser. 
 4. Configure your team number in the configuration tab, and click the red "Change Team Number" Button.
 
-![](https://ik.imagekit.io/llimi/controlsystem/tr:e-shadow/teamnumber.png
-)
+![](https://ik.imagekit.io/llimi/controlsystem/teamnumber.png)
 
 6. Open the NI DriverStation and configure it with a matching team number
 7. The NI DriverStation should establish communications with Systemcore at this point.
 
-![](https://ik.imagekit.io/llimi/controlsystem/tr:e-shadow/dsconnectivity.png
-)
+![](https://ik.imagekit.io/llimi/controlsystem/dsconnectivity.png)
 
 ### Deploying Your First Robot Program to Systemcore
 
@@ -146,7 +144,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 5. Deploy the project as you normally would
 6. The NI DriverStation should reflect the presence of robot code
 
-![](https://ik.imagekit.io/llimi/controlsystem/tr:e-shadow/dscode.png
+![](https://ik.imagekit.io/llimi/controlsystem/dscode.png
 )
 
 7. You're now ready enable.
