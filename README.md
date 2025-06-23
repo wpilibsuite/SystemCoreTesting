@@ -152,14 +152,14 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 3. Click the "Add Package" card. 
 4. Install one package at a time.
 5. Click the new "Elastic" or "AdvantageScope Lite" launch cards.
-6. Use Elastic and AdvantageScope as you normally would. A quick way to add live telemetry to your robot is via ```SmartDashboard.putNumber("key",value);```.
+6. Use Elastic and AdvantageScope as you normally would. A quick way to add live telemetry to your robot is the use of the SmartDashboard API (subject to change soon) ```SmartDashboard.putNumber("key",value);```.
 >**Elastic and AdvantageScope Lite packages will soon be pre-baked into the OS**
 
 ### Enabling CANivore Support
 
 [Package Installation Tutorial Video (30s)](https://player.vimeo.com/video/1095497571)
 
-1. Download the Canivore IPK packages.
+1. Download the CANivore IPK packages.
 2. Navigate to the web interface.
 3. Click the "Add Package" card. 
 4. Install the usb-kernel package, and then install the usb package.
