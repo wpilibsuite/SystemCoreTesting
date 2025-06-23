@@ -148,6 +148,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 ![](https://ik.imagekit.io/llimi/controlsystem/dscode.png)
 
 7. You're now ready enable.
+8. After initial testing with this new, simple, project, you can return to VSCode and open existing robot projects, which should trigger the Importer to create new 2027 projects based on those existing projects. 
 
 ### Exploring On-Robot Telemetry with Elastic and AdvantageScope
 
