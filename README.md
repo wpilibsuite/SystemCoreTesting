@@ -5,19 +5,12 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 >**Software posted here is Alpha software for the 2027 season and is not compatible with Control Hub or roboRIO**
 
+![SystemcoreTopHousing](https://ik.imagekit.io/llimi/controlsystem/tophousingcrop)
 
-
-![SystemcoreTopHousing](https://ik.imagekit.io/llimi/controlsystem/tophousingcrop
-)
-
-[Systemcore Specification PDF]()
+[Systemcore Specification PDF](https://downloads.limelightvision.io/documents/systemcore_specifications_june15_2025_alpha.pdf)
 
 >**Alpha units do not have port labels**
-![SystemcoreUnboxing](https://ik.imagekit.io/llimi/controlsystem/scunboxing.png
-)
-
-
-
+![SystemcoreUnboxing](https://ik.imagekit.io/llimi/controlsystem/scunboxing.png)
 
 ## Beta Software Directory
 
@@ -25,7 +18,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 [2027 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-1/)
 
-[Limelight Hardware Manager 2.0](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_0.exe)
+[Limelight Hardware Manager 2.0.1](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_1.exe)
 
 [OS Releases, Toolchain, Package Examples, Cross-Compilation Examples](https://github.com/LimelightVision/systemcore-os-public)
 
@@ -45,8 +38,8 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 |  |  |
 |---------|-------|
 | Built-in Wi-Fi Access Point SSID | SYSTEMCORE |
-| Wi-Fi Password | PASSWORD |
-| Systemcore Wi-Fi AP IP | 172.30.0.1 |
+| Built-in Wi-Fi Access Point Password | PASSWORD |
+| Systemcore Wi-Fi Access Point IP | 172.30.0.1 |
 | Systemcore USB IP (Windows) | 172.28.0.1 |
 | Systemcore USB IP (Linux, Mac) | 172.29.0.1 |
 | Default User | systemcore |
@@ -54,11 +47,13 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 | Default Mount Locations for USB Storage | /U, /V ...|
 | CAN Bus Interface Names| can_s0, can_s1, can_s2, can_s3, can_s4 |
 
-### Power
+### Powering On
 
-1. Connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
-2. If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
+Connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
 
+### Flash Mode
+
+If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
 
 ### Flashing OS Updates
 Alpha Units ship with OS Release 157. Feel free to skip this step and jump right into programming if you're just getting started
@@ -68,7 +63,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 <summary>Flashing OS Updates (Windows)</summary>
 
 1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public)
-2. Make sure the new [Limelight Hardware Manager 2.0](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_0.exe) is installed
+2. Make sure the new [Limelight Hardware Manager 2.0.1](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_1.exe) is installed
 3. Open Limelight Hardware Manager
 3. Navigate to the Flash OS Tab
 4. Boot Systemcore into Flash Mode (see 'power' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
@@ -86,8 +81,8 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 <details>
 <summary>Flashing OS Updates (Mac)</summary>
 
-1. Download [Balena Etcher](https://etcher.balena.io/)
-2. Spin-up RPIBoot
+1. Download [Balena Etcher](https://etcher.balena.io/).
+2. Spin-up RPIBoot:
     ```
     brew install libusb
     brew install pkg-config
@@ -97,16 +92,16 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
     cd mass-storage-gadget64
     sudo ../rpiboot -d .
     ```
-3. Boot Systemcore into Flash Mode
-4. Flash with Etcher
+3. Boot Systemcore into Flash Mode.
+4. Flash with Etcher.
 
 </details>
 
 <details>
 <summary>Flashing OS Updates (Ubuntu/Debian)</summary>
 
-1. Download [Balena Etcher](https://etcher.balena.io/)
-2. Spin-up RPIBoot
+1. Download [Balena Etcher](https://etcher.balena.io/).
+2. Spin-up RPIBoot:
     ```
     apt update
     apt install libusb-1.0-0-dev pkg-config build-essential
@@ -116,13 +111,12 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
     cd mass-storage-gadget64
     sudo ../rpiboot -d .
     ```
-3. Boot Systemcore into Flash Mode
-4. Flash with Etcher
+3. Boot Systemcore into Flash Mode.
+4. Flash with Etcher.
 
 </details>
 
 ### Accessing the Web Interface and Setting Your Team Number
-
 
 1. Boot Systemcore normally.
 2. Connect via USB, Ethernet, or Wi-Fi
@@ -142,11 +136,10 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 2. Ensure WPILIB 2027 has been installed.
 3. Open '2027 WPILib VSCode' 
 4. Make a new WPILib project as you normally would, and make sure to set the correct team number during the project creation step.
-5. Deploy the project as you normally would
-6. The NI DriverStation should reflect the presence of robot code
+5. Deploy the project as you normally would.
+6. The NI DriverStation should reflect the presence of robot code.
 
-![](https://ik.imagekit.io/llimi/controlsystem/dscode.png
-)
+![](https://ik.imagekit.io/llimi/controlsystem/dscode.png)
 
 7. You're now ready enable.
 
@@ -159,15 +152,17 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 3. Click the "Add Package" card. 
 4. Install one package at a time.
 5. Click the new "Elastic" or "AdvantageScope Lite" launch cards.
-6. Use Elastic and AdvantageScope as you normally would
+6. Use Elastic and AdvantageScope as you normally would. A quick way to add live telemetry to your robot is the use of the SmartDashboard API (subject to change soon) ```SmartDashboard.putNumber("key",value);```.
 >**Elastic and AdvantageScope Lite packages will soon be pre-baked into the OS**
 
 ### Enabling CANivore Support
 
 [Package Installation Tutorial Video (30s)](https://player.vimeo.com/video/1095497571)
 
-1. Download the Canivore IPK packages.
+1. Download the CANivore IPK packages.
 2. Navigate to the web interface.
 3. Click the "Add Package" card. 
 4. Install the usb-kernel package, and then install the usb package.
-5. Powercycle your Systemcore
+5. Powercycle your Systemcore.
+
+
