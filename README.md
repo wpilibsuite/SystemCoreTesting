@@ -32,6 +32,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 ### Vendor Libraries
 
 ### Other
+* [AdvantageScope 2027 Alpha](AdvantageScope.md)
 
 ## Alpha 1 Goals
 
@@ -170,4 +171,3 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 3. Click the "Add Package" card. 
 4. Install the usb-kernel package, and then install the usb package.
 5. Powercycle your Systemcore
-
