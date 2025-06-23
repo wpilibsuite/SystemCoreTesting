@@ -24,6 +24,8 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Vendor Libraries
 
+- [CTR Electronics Phoenix 6](CTR-Phoenix.md)
+
 ### Other
 * [AdvantageScope 2027 Alpha](AdvantageScope.md)
 
