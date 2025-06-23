@@ -7,7 +7,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ![SystemcoreTopHousing](https://ik.imagekit.io/llimi/controlsystem/tophousingcrop)
 
-[Systemcore Specification PDF]()
+[Systemcore Specification PDF](https://downloads.limelightvision.io/documents/systemcore_specifications_june15_2025_alpha.pdf)
 
 >**Alpha units do not have port labels**
 ![SystemcoreUnboxing](https://ik.imagekit.io/llimi/controlsystem/scunboxing.png)
@@ -18,13 +18,14 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 [2027 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-1/)
 
-[Limelight Hardware Manager 2.0](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_0.exe)
+[Limelight Hardware Manager 2.0.1](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_1.exe)
 
 [OS Releases, Toolchain, Package Examples, Cross-Compilation Examples](https://github.com/LimelightVision/systemcore-os-public)
 
 ### Vendor Libraries
 
 ### Other
+* [AdvantageScope 2027 Alpha](AdvantageScope.md)
 
 ## Alpha 1 Goals
 
@@ -62,7 +63,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 <summary>Flashing OS Updates (Windows)</summary>
 
 1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public)
-2. Make sure the new [Limelight Hardware Manager 2.0](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_0.exe) is installed
+2. Make sure the new [Limelight Hardware Manager 2.0.1](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_1.exe) is installed
 3. Open Limelight Hardware Manager
 3. Navigate to the Flash OS Tab
 4. Boot Systemcore into Flash Mode (see 'power' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
@@ -138,8 +139,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 5. Deploy the project as you normally would.
 6. The NI DriverStation should reflect the presence of robot code.
 
-![](https://ik.imagekit.io/llimi/controlsystem/dscode.png
-)
+![](https://ik.imagekit.io/llimi/controlsystem/dscode.png)
 
 7. You're now ready enable.
 
@@ -164,4 +164,5 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 3. Click the "Add Package" card. 
 4. Install the usb-kernel package, and then install the usb package.
 5. Powercycle your Systemcore.
+
 
