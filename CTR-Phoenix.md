@@ -52,5 +52,10 @@ public static final TalonFX m_motor = new Talonfx(0);
 
 ## Download
 
-Vendordep: `https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-25.90.0-alpha-1.json`
-Firmware: Tuner -> For the year dropdown select `2027-alpha-1` -> Firmware will be automatically populated
+* Vendordep: `https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-25.90.0-alpha-1.json`
+
+* Firmware: Tuner -> For the year dropdown select `2027-alpha-1` -> Firmware will be automatically populated
+
+* canivore-usb-kernel Package: https://ctre.download/files/canivore-usb-kernel_1.14_aarch64.ipk
+
+* canivore-usb Package: https://ctre.download/files/canivore-usb_1.14_aarch64.ipk

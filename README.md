@@ -24,9 +24,10 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Vendor Libraries
 
-- [CTR Electronics Phoenix 6](CTR-Phoenix.md)
+* [CTR Electronics Phoenix 6](CTR-Phoenix.md)
 
 ### Other
+
 * [AdvantageScope 2027 Alpha](AdvantageScope.md)
 
 ## Alpha 1 Goals
@@ -77,7 +78,6 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 >**Full System Images will take several minutes to flash. Systemcore will soon support fast OTA updates.**
 
-> **The new HardwareManager will soon be cross-platform. See flash instructions for other platforms below:**
 </details>
 
 <details>
@@ -117,6 +117,10 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 4. Flash with Etcher.
 
 </details>
+
+> **The new Hardware Manager will soon be cross-platform.**
+
+> **A browser-based OS update procedure is in development.**
 
 ### Accessing the Web Interface and Setting Your Team Number
 
@@ -161,7 +165,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 [Package Installation Tutorial Video (30s)](https://player.vimeo.com/video/1095497571)
 
-1. Download the CANivore IPK packages.
+1. [Download the CANivore IPK packages.](https://github.com/wpilibsuite/SystemCoreTesting/blob/main/CTR-Phoenix.md#download)
 2. Navigate to the web interface.
 3. Click the "Add Package" card. 
 4. Install the usb-kernel package, and then install the usb package.
