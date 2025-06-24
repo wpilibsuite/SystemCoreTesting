@@ -172,3 +172,6 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 5. Powercycle your Systemcore.
 
 
+### Making Cables
+
+Check the "Mating Connector" Section of the specification sheet and [this github discussion](https://github.com/wpilibsuite/SystemCoreTesting/discussions/11).
