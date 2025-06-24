@@ -140,7 +140,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 1. Boot and establish connectivity with your Systemcore.
 2. Ensure WPILIB 2027 has been installed.
-3. Open '2027 WPILib VSCode' 
+3. Open '2027_alpha1 WPILib VS Code' 
 4. Make a new WPILib project as you normally would, and make sure to set the correct team number during the project creation step.
 5. Deploy the project as you normally would.
 6. The NI DriverStation should reflect the presence of robot code.
@@ -148,6 +148,7 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 ![](https://ik.imagekit.io/llimi/controlsystem/dscode.png)
 
 7. You're now ready enable.
+8. After initial testing with this new, simple, project, you can return to VS Code and open existing robot projects, which should trigger the Importer to create new 2027 projects based on those existing projects. 
 
 ### Exploring On-Robot Telemetry with Elastic and AdvantageScope
 
