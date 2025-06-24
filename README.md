@@ -54,6 +54,8 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 Connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
 
+Do not use both power inputs (Bridge + Weidmuller) simultaneously.
+
 ### Flash Mode
 
 If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
@@ -173,3 +175,10 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 5. Powercycle your Systemcore.
 
 
+### Making Cables
+
+Check the "Mating Connector" Section of the specification sheet and [this github discussion](https://github.com/wpilibsuite/SystemCoreTesting/discussions/11).
+
+### I2C Note
+
+The I2C pinout does not match that of the roboRIO. Cables such as https://www.revrobotics.com/rev-11-1729/?searchid=4554778&search_query=4+wire+i2c will need to be modified - SCL and SDA will need to be swapped. The Systemcore pinout matches the Qwiic pinout.
