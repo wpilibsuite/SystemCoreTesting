@@ -54,6 +54,8 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 Connect your Systemcore to your robot's power distribution board. We recommend the use of 18AWG wire with white Weidmuller ferrules.
 
+Do not use both power inputs (Bridge + Weidmuller) simultaneously.
+
 ### Flash Mode
 
 If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
