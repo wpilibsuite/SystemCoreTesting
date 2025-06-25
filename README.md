@@ -140,6 +140,10 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 ![](https://ik.imagekit.io/llimi/controlsystem/dsconnectivity.png)
 
+### Wi-Fi Configuration
+
+Release 157 selects a default Wi-Fi channel. This is causing issues in some environments due to interference. Change the channel configuration to 'auto' and set the frequency band to 5Ghz for better connectivity.
+
 ### Deploying Your First Robot Program to Systemcore
 
 1. Boot and establish connectivity with your Systemcore.
@@ -181,6 +185,11 @@ Alpha Units ship with OS Release 157. Feel free to skip this step and jump right
 
 Check the "Mating Connector" Section of the specification sheet and [this github discussion](https://github.com/wpilibsuite/SystemCoreTesting/discussions/11).
 
-### I2C Note
+### Transitioning from roboRIO
+#### I2C
 
-The I2C pinout does not match that of the roboRIO. Cables such as https://www.revrobotics.com/rev-11-1729/?searchid=4554778&search_query=4+wire+i2c will need to be modified - SCL and SDA will need to be swapped. The Systemcore pinout matches the Qwiic pinout.
+The I2C pinout does not match that of the roboRIO. Cables such as https://www.revrobotics.com/rev-11-1729/?searchid=4554778&search_query=4+wire+i2c will need to be modified - SCL and SDA will need to be swapped. The Systemcore pinout matches the Qwiic / ControlHub pinout.
+
+#### IO
+
+The IO signal pins have a 4.7K pulldown resistor. Limit switches will need to short the SIGNAL pin to the +3.3V pin on Systemcore.
