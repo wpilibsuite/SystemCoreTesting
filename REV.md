@@ -16,6 +16,8 @@ An offline installer is available [here](https://github.com/REVrobotics/REV-Soft
 ### REVLib v2027.0.0-alpha-1
 
 - [REVLib] Adds support for Systemcore and the WPILib 2027 alpha
+- [SPARK, Servo Hub] Adds `busId` parameter to class constructor to specify which CAN bus the device is on
+
 </details>
 
 ## Firmware
