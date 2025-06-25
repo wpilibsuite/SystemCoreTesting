@@ -185,7 +185,7 @@ Release 157 selects a default Wi-Fi channel. This is causing issues in some envi
 
 Check the "Mating Connector" Section of the specification sheet and [this github discussion](https://github.com/wpilibsuite/SystemCoreTesting/discussions/11).
 
-### Transitioning From roboRIO
+### Transitioning from roboRIO
 #### I2C
 
 The I2C pinout does not match that of the roboRIO. Cables such as https://www.revrobotics.com/rev-11-1729/?searchid=4554778&search_query=4+wire+i2c will need to be modified - SCL and SDA will need to be swapped. The Systemcore pinout matches the Qwiic / ControlHub pinout.
