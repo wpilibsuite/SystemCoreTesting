@@ -1,6 +1,6 @@
 # Elastic 2027 Alpha
 
-The 2027 Alpha versions of Elastic 2027 can be found [here](https://github.com/Gold872/elastic-dashboard/releases).
+The 2027 Alpha versions of Elastic can be found [here](https://github.com/Gold872/elastic-dashboard/releases).
 
 ## Web Support
 
@@ -19,3 +19,7 @@ Adds the following additions for the 2027 version of Elastic
 - Support for the Web
 - Remove all references to RoboRIO IP addresses
 - Add ability to connect to the SystemCore's internal Network Tables server
+
+### 2027.0.0 Alpha 2
+
+- Fix issue where fonts won't load on web
