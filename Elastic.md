@@ -11,6 +11,10 @@ The biggest addition for 2027 Elastic is support for web browsers. The web versi
 
 ## Changelog
 
+### 2027.0.0 Alpha 2
+
+- Fix issue where fonts won't load on web
+
 ### 2027.0.0 Alpha 1
 
 Initial 2027 Alpha release of Elastic
@@ -19,7 +23,3 @@ Adds the following additions for the 2027 version of Elastic
 - Support for the Web
 - Remove all references to RoboRIO IP addresses
 - Add ability to connect to the SystemCore's internal Network Tables server
-
-### 2027.0.0 Alpha 2
-
-- Fix issue where fonts won't load on web
