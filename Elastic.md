@@ -1,6 +1,6 @@
 # Elastic 2027 Alpha
 
-The 2027 Alpha versions of Elastic 2027 can be found [here](https://github.com/Gold872/elastic-dashboard/releases).
+The 2027 Alpha versions of Elastic can be found [here](https://github.com/Gold872/elastic-dashboard/releases).
 
 ## Web Support
 
@@ -10,6 +10,10 @@ The biggest addition for 2027 Elastic is support for web browsers. The web versi
 - Integers that are larger than 2^53 - 1 will be truncated to a smaller number due to internal limitations of JavaScript
 
 ## Changelog
+
+### 2027.0.0 Alpha 2
+
+- Fix issue where fonts won't load on web
 
 ### 2027.0.0 Alpha 1
 
