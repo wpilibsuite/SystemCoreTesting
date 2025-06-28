@@ -26,6 +26,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 * [CTR Electronics Phoenix 6](CTR-Phoenix.md)
 * [REV Robotics](REV.md)
+* [AdvantageKit](AdvantageKit.md)
 
 ### Other
 

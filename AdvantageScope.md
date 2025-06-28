@@ -1,8 +1,8 @@
 # AdvantageScope 2027 Alpha
 
-**Downloads for the 2027 alpha releases of AdvantageScope can be found [here](https://github.com/Mechanical-Advantage/AdvantageScope/releases).** The changelog below lists the available releases along with related compatibility information:
+**Downloads for the 2027 alpha releases of AdvantageScope can be found [here](https://github.com/Mechanical-Advantage/AdvantageScope/releases).** The changelog below lists the available releases along with related compatibility information. See also the [known issues](#known-issues) section below.
 
-### v27.0.0-alpha-1
+### [v27.0.0-alpha-1](https://github.com/Mechanical-Advantage/AdvantageScope/releases/tag/v27.0.0-alpha-1)
 
 - Initial release for SystemCore
 
@@ -56,3 +56,21 @@ _Note that some of these features are incomplete or subject to change._
 - Fixed a bug causing invalid 3D camera positions when reopening AdvantageScope
 - Fixed the ordering of AdvantageKit logs with randomized names in the download window
 - Fixed handling of default values and empty arrays in Protobuf messages
+
+## Known Issues
+
+### Log files are very zoomed out by default
+
+By default, log files from SystemCore currently use [epoch timestamps](https://en.wikipedia.org/wiki/Unix_time) that are not properly handled by AdvantageScope. This causes the timeline to be very zoomed out when opening log files, so significant zooming is required to access data. There are also various visual artifacts throughout the UI. This issue will be fixed in future releases of AdvantageScope and WPILib (see https://github.com/wpilibsuite/allwpilib/issues/8041).
+
+### URCL is not supported
+
+There is currently no 2027 alpha release for [URCL](https://docs.advantagescope.org/more-features/urcl) due to the limited featureset of the CAN API in the 2027 alpha of WPILib. CAN logging for the Spark Max and Spark Flex will be supported in the future.
+
+### Joystick visualization with POVs is inaccurate
+
+SystemCore and the 2027 alpha of WPILib use a new format for joystick POV values that is not currently compatible with AdvantageScope, causing the joystick visualization to display inaccurate data. This issue will be fixed in a future release.
+
+### Keyboard shortcuts do not function consistently in AdvantageScope Lite
+
+The menu bar in AdvantageScope Lite displays keyboard shortcut information, but these shortcuts may function inconsistently depending on the OS and browser. This issue is being investigated and will be fixed in a future release (see https://github.com/Mechanical-Advantage/AdvantageScope/issues/390).
