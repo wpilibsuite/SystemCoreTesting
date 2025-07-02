@@ -28,6 +28,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 * [REV Robotics](REV.md)
 * [AdvantageKit](AdvantageKit.md)
 * [ChoreoLib](ChoreoLib.md)
+* [PathPlannerLib](PathPlannerLib.md)
 
 ### Other
 
