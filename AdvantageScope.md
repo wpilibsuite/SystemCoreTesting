@@ -2,6 +2,16 @@
 
 **Downloads for the 2027 alpha releases of AdvantageScope can be found [here](https://github.com/Mechanical-Advantage/AdvantageScope/releases).** The changelog below lists the available releases along with related compatibility information. See also the [known issues](#known-issues) section below.
 
+### [v27.0.0-alpha-2](https://github.com/Mechanical-Advantage/AdvantageScope/releases/tag/v27.0.0-alpha-2)
+
+- **Fixed rendering of WPILOGs with timestamp ranges starting after zero** (addresses the [known issue](#log-files-are-very-zoomed-out-by-default) below)
+- **Fixed functionality of in-app menus on Windows and Linux**
+- Added support for unit conversion with byte values
+- Improved stability of YouTube and TBA video downloading
+- Fixed visual artifacts on line graph tab with differentiated fields
+- Fixed handling of `ELECTRON_RUN_AS_NODE` environment variable
+- Fixed rendering of very large raw and array values
+
 ### [v27.0.0-alpha-1](https://github.com/Mechanical-Advantage/AdvantageScope/releases/tag/v27.0.0-alpha-1)
 
 - Initial release for SystemCore
@@ -44,6 +54,7 @@ _Note that some of these features are incomplete or subject to change._
 - Improved handling of coordinate systems for FTC compatibility
 - Improved color options for robot bumpers
 - Added partial support for 2D mechanisms on the YZ axis of 3D robots
+- Added support for unit conversion with byte values
 - Added support for 3D view antialiasing
 - Renamed odometry tab to "2D Field" for consistency & accuracy
 - Reorganized menu bar for consistency across platforms
@@ -51,21 +62,22 @@ _Note that some of these features are incomplete or subject to change._
 - Removed support for Zebra MotionWorks (no longer in use at events)
 - Restrict update checking to the current major version
 - Improved the efficiency of line graph plotting
+- Improved stability of YouTube and TBA video downloading
+- Fixed handling of WPILOGs with timestamp ranges starting after zero
+- Fixed rendering of very large raw and array values
 - Fixed edge cases with "Zoom to Enabled Range" function
+- Fixed visual artifacts on line graph tab with differentiated fields
 - Fixed translucency of ghost objects on the 2D field
 - Fixed a bug causing invalid 3D camera positions when reopening AdvantageScope
 - Fixed the ordering of AdvantageKit logs with randomized names in the download window
 - Fixed handling of default values and empty arrays in Protobuf messages
+- Fixed handling of `ELECTRON_RUN_AS_NODE` environment variable
 
 ## Known Issues
 
-### Log files are very zoomed out by default
-
-By default, log files from SystemCore currently use [epoch timestamps](https://en.wikipedia.org/wiki/Unix_time) that are not properly handled by AdvantageScope. This causes the timeline to be very zoomed out when opening log files, so significant zooming is required to access data. There are also various visual artifacts throughout the UI. This issue will be fixed in future releases of AdvantageScope and WPILib (see https://github.com/wpilibsuite/allwpilib/issues/8041).
-
 ### URCL is not supported
 
-There is currently no 2027 alpha release for [URCL](https://docs.advantagescope.org/more-features/urcl) due to the limited featureset of the CAN API in the 2027 alpha of WPILib. CAN logging for the Spark Max and Spark Flex will be supported in the future.
+There is currently no 2027 alpha release for [URCL](https://docs.advantagescope.org/more-features/urcl) due to the limited featureset of the CAN API in the first 2027 alpha of WPILib. A 2027 alpha of URCL will be released at a later date.
 
 ### Joystick visualization with POVs is inaccurate
 
@@ -74,3 +86,9 @@ SystemCore and the 2027 alpha of WPILib use a new format for joystick POV values
 ### Keyboard shortcuts do not function consistently in AdvantageScope Lite
 
 The menu bar in AdvantageScope Lite displays keyboard shortcut information, but these shortcuts may function inconsistently depending on the OS and browser. This issue is being investigated and will be fixed in a future release (see https://github.com/Mechanical-Advantage/AdvantageScope/issues/390).
+
+### Log files are very zoomed out by default
+
+_Fixed by [v27.0.0-alpha-2](#v2700-alpha-2)_
+
+~~By default, log files from SystemCore currently use [epoch timestamps](https://en.wikipedia.org/wiki/Unix_time) that are not properly handled by AdvantageScope. This causes the timeline to be very zoomed out when opening log files, so significant zooming is required to access data. There are also various visual artifacts throughout the UI. This issue will be fixed in future releases of AdvantageScope and WPILib (see https://github.com/wpilibsuite/allwpilib/issues/8041).~~

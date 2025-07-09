@@ -32,7 +32,9 @@ Time synchronization from the Driver Station is not currently implemented on Sys
 
 ### Log files are very zoomed out in AdvantageScope
 
-WPILib (and AdvantageKit by extension) currently use [epoch timestamps](https://en.wikipedia.org/wiki/Unix_time) on SystemCore, which are not properly handled by AdvantageScope. See [here](AdvantageScope.md#log-files-are-very-zoomed-out-by-default) for details.
+_Fixed by AdvantageScope [v27.0.0-alpha-2](AdvantageScope.md#v2700-alpha-2)_
+
+~~WPILib (and AdvantageKit by extension) currently use [epoch timestamps](https://en.wikipedia.org/wiki/Unix_time) on SystemCore, which are not properly handled by AdvantageScope. See [here](AdvantageScope.md#log-files-are-very-zoomed-out-by-default) for details.~~
 
 ### USB drives do not mount consistently
 
