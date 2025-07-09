@@ -66,7 +66,7 @@ Do not use both power inputs (Bridge + Weidmuller) simultaneously.
 If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
 
 ### Flashing OS Updates
-Alpha Units ship with OS Release 157. Feel free to skip this step and jump right into programming if you're just getting started
+Update to the latest stable Alpha release to get started.
 
 [Systemcore Flash Tutorial Video (60s)](https://player.vimeo.com/video/1095423117)
 <details>
