@@ -50,6 +50,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 | Systemcore Wi-Fi Access Point IP | 172.30.0.1 |
 | Systemcore USB IP (Windows) | 172.28.0.1 |
 | Systemcore USB IP (Linux, Mac) | 172.29.0.1 |
+| Systemcore Ethernet IP | Check display |
 | Default User | systemcore |
 | Default Password | systemcore |
 | Default Mount Locations for USB Storage | /U, /V ...|
