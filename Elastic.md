@@ -11,6 +11,10 @@ The biggest addition for 2027 Elastic is support for web browsers. The web versi
 
 ## Changelog
 
+### 2027.0.0 Alpha 3
+
+- Fix issue where camera streams would stop cycling through URLs
+
 ### 2027.0.0 Alpha 2
 
 - Fix issue where fonts won't load on web
