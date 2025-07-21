@@ -2,6 +2,14 @@
 
 **Downloads for the 2027 alpha releases of AdvantageScope can be found [here](https://github.com/Mechanical-Advantage/AdvantageScope/releases).** The changelog below lists the available releases along with related compatibility information. See also the [known issues](#known-issues) section below.
 
+### [v27.0.0-alpha-3](https://github.com/Mechanical-Advantage/AdvantageScope/releases/tag/v27.0.0-alpha-3)
+
+- Fixed WPILOG parsing with official WPILib distributions of AdvantageScope
+- Added support for separate 2D mechanisms on XZ and YZ planes
+- Added warning on line graph when no enabled state found
+- Fixed edge cases when resizing controls pane
+- Fixed visual glitches when switching line graph styles
+
 ### [v27.0.0-alpha-2](https://github.com/Mechanical-Advantage/AdvantageScope/releases/tag/v27.0.0-alpha-2)
 
 - **Fixed rendering of WPILOGs with timestamp ranges starting after zero** (addresses the [known issue](#log-files-are-very-zoomed-out-by-default) below)
@@ -53,9 +61,10 @@ _Note that some of these features are incomplete or subject to change._
 - Added support for FTC fields and robots
 - Improved handling of coordinate systems for FTC compatibility
 - Improved color options for robot bumpers
-- Added partial support for 2D mechanisms on the YZ axis of 3D robots
+- Added support for 2D mechanisms on the YZ axis of 3D robots
 - Added support for unit conversion with byte values
 - Added support for 3D view antialiasing
+- Added warning on line graph when no enabled state found
 - Renamed odometry tab to "2D Field" for consistency & accuracy
 - Reorganized menu bar for consistency across platforms
 - Removed "experimental" warning for AdvantageScope XR
@@ -67,9 +76,11 @@ _Note that some of these features are incomplete or subject to change._
 - Fixed rendering of very large raw and array values
 - Fixed edge cases with "Zoom to Enabled Range" function
 - Fixed visual artifacts on line graph tab with differentiated fields
+- Fixed visual glitches when switching line graph styles
 - Fixed translucency of ghost objects on the 2D field
 - Fixed a bug causing invalid 3D camera positions when reopening AdvantageScope
 - Fixed the ordering of AdvantageKit logs with randomized names in the download window
+- Fixed edge cases when resizing controls pane
 - Fixed handling of default values and empty arrays in Protobuf messages
 - Fixed handling of `ELECTRON_RUN_AS_NODE` environment variable
 
