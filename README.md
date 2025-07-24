@@ -16,7 +16,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Tooling
 
-[2027 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-1/)
+[2027 Alpha 2 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-2/)
 
 [Limelight Hardware Manager 2.0.1](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_1.exe)
 
