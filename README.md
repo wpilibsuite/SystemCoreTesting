@@ -148,7 +148,7 @@ Update to the latest stable Alpha release to get started.
 
 Release 157 selects a default Wi-Fi channel. This is causing issues in some environments due to interference. Change the channel configuration to 'auto' and set the frequency band to 5Ghz for better connectivity.
 
-### Deploying Your First Robot Program to Systemcore
+### Deploying Your First Robot Program to Systemcore (C++/Java)
 
 1. Boot and establish connectivity with your Systemcore.
 2. Ensure WPILIB 2027 has been installed.
@@ -160,7 +160,11 @@ Release 157 selects a default Wi-Fi channel. This is causing issues in some envi
 ![](https://ik.imagekit.io/llimi/controlsystem/dscode.png)
 
 7. You're now ready enable.
-8. After initial testing with this new, simple, project, you can return to VS Code and open existing robot projects, which should trigger the Importer to create new 2027 projects based on those existing projects. 
+8. After initial testing with this new, simple, project, you can return to VS Code and open existing robot projects, which should trigger the Importer to create new 2027 projects based on those existing projects.
+
+### Deploying Your First Robot Program to Systemcore (Python)
+
+See [RobotPy specific notes](robotpy.md)
 
 ### Exploring On-Robot Telemetry with Elastic and AdvantageScope
 
