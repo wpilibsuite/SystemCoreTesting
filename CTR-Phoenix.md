@@ -16,6 +16,16 @@ Due to the volatile nature of versions and breaking changes, the below list is p
 - `25.90.0-alpha-1` compatible Phoenix 6 firmware
   - Firmware `25.90.0.0`
 
+## Python Usage
+
+It is highly recommended to explicitly pin the Python dependency in your `project.toml`.
+
+```
+requires = [
+    "phoenix6==25.90.0a1"
+]
+```
+
 ## Basic Example
 
 SystemCore CAN buses can be used by specifying their interface name. From left to right (left being closest to the power input), the buses are
