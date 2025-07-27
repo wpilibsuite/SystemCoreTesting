@@ -32,7 +32,7 @@ Canandgyro gyro = new Canandgyro(0, "socketcan:can_s2");
 
 ## Known issues
 
-* **C++ is currently unsupported.**
+* **C++ is currently unsupported.** This includes things that typically require the C++ bindings, such as Python. 
 * v24 builds of Alchemist do not support the websocket/backend protocol that this vendordep uses. 
   **You will need to use a v25+ build of Alchemist.**
 
